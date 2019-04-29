@@ -1,3 +1,11 @@
-# use glob syntax
+# data files of solutionss
 *.mp4
 *.json
+
+# OS generated files #
+######################
+.DS_Stire
+
+# ODE generated files
+.idea/
+
