@@ -1,5 +1,5 @@
 # FDDiffusion
-
+A 1D BVP IBVP solver for diffusion or advection type PDE, with fruitful choice of integrators and illustration tools.
 Basic ussage example with discrete Green's function:
 
 ```python
