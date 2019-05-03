@@ -12,8 +12,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from FDDiffusion.utils import PlotSpaceTimePDE, Animate_1d_wave, Write_sol_json, Read_sol_json
 
-CFL = 1.5
-N = 128
+CFL = 1.5000000001
+N = 32
 
 # space- time geometric gird
 a = -1
@@ -73,3 +73,6 @@ min = sol.y.min()
 PlotSpaceTimePDE(sol, xsample, xcount=2, tcount=2,
                  title="Discrete Green for {},N={}, CFL={}, min={:.2g}".format(method,N, CFL,min))
 ```
+This will generate a plot of discrete Green's function for Crank-Nicolson method. Which see it clearly violate the physical properties of heat Green's function,  which indicates the bondary of L-stability.
+
+![Image of Discrete Green's Function](https://github.com/ldXiao/FDDiffusion/blob/master/data/DGreen_32CFL600001.png)
