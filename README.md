@@ -54,7 +54,7 @@ BC2 = BoundaryCondition(b, type="N", constraint=bc1)
 spgrid = SpaceGrid(a, b, N + 1)
 xsample = np.linspace(a, b, N + 1)
 
-#initialize Sturm-Liouville operator, use BCs=[] is you want to specify periodic boundary condition
+#initialize Sturm-Liouville operator, use BCs=[] if you want to specify periodic boundary condition
 ST = SturmLiouville(spgrid, d, q)
 #initialize initial-boundary value problem
 ibvp = IBVP(ST=ST, Nonlinear=None, IC=Ddelta, BCs=[BC1,BC2], rhs=f)
