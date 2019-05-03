@@ -1,5 +1,3 @@
-import sys
-sys.path.append('../FDDiff')
 from FDDiffusion.FDiff import SturmLiouville
 from FDDiffusion.discretizatoin import SpaceGrid
 from FDDiffusion.BCs import BoundaryCondition
